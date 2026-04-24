@@ -1,0 +1,7 @@
+flask
+requests
+pycryptodome
+pymongo
+urllib3
+protobuf
+dnspython
