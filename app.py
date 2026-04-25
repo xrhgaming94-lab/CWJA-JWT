@@ -34,7 +34,7 @@ NICK_SECRET = b"1e5898ccb8dfdd921f9beca848768"
 API_SECRET = os.environ.get("API_SECRET", "d")
 
 # ─── MongoDB ────────────────────────────────────────────────────────────────
-MONGO_URI = "mongodb://starzzff08:wrh2PeQrdxSloNGC@cluster0.qnfxnzm.mongodb.net:27017/?retryWrites=true&w=majority"
+MONGO_URI = "mongodb://starzzff08:wrh2PeQrdxSloNGC@cluster0.qnfxnzm.mongodb.net:27017/?retryWrites=true&w=majority&appName=Cluster0"
 mongo_client = MongoClient(MONGO_URI)
 db = mongo_client["jwt"]
 accounts_col = db["accounts"]
@@ -149,7 +149,7 @@ def get_token_inspect_data(access_token):
 
 
 def login(uid, access_token, open_id, platform_type):
-    url = "https://loginbp.ggblueshark.com/MajorLogin"
+    url = "https://clientbp.ggpolarbear.com/MajorLogin"
     game_data = my_pb2.GameData()
     game_data.timestamp      = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
     game_data.game_name      = "Free Fire"
