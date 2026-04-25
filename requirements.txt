@@ -1,6 +1,7 @@
 flask==2.3.3
-pymongo==4.5.0
 requests==2.31.0
-protobuf==3.20.3
 pycryptodome==3.19.0
-cryptography==41.0.7
+pymongo==4.5.0
+protobuf==3.20.3
+dnspython==2.4.2
+urllib3==2.0.7
