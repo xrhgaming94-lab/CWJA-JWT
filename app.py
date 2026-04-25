@@ -34,7 +34,7 @@ NICK_SECRET = b"1e5898ccb8dfdd921f9beca848768"
 API_SECRET = os.environ.get("API_SECRET", "d")
 
 # ─── MongoDB ────────────────────────────────────────────────────────────────
-MONGO_URI = "mongodb://starzzff08:wrh2PeQrdxSloNGC@cluster0.qnfxnzm.mongodb.net:27017/?retryWrites=true&w=majority&appName=Cluster0"
+MONGO_URI = "mongodb://starzzff08:wrh2PeQrdxSloNGC@cluster0.qnfxnzm.mongodb.net:27017/?retryWrites=true&w=majority"
 mongo_client = MongoClient(MONGO_URI)
 db = mongo_client["jwt"]
 accounts_col = db["accounts"]
